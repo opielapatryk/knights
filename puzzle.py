@@ -35,7 +35,7 @@ knowledge2 = And(
 # B says "C is a knave."
 # C says "A is a knight."
 knowledge3 = And(
-    
+    Or(AKnave,AKnight),Implication(AKnight,CKnight),Implication(BKnight,CKnave),Implication(AKnight,BKnave),AKnight
 )
 
 
